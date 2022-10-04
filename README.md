@@ -1,6 +1,6 @@
 # docker-full-stack-app
 
-
+docker + mongodb + node
 
 
 
