@@ -5,10 +5,16 @@ services:
     build: ./app
     ports:
       - "3000:3000"
-    restart: always 
+    volumes: 
+      - myvolume99:/usr/src/app
+        
+    restart: always
     links: 
       - mongo
   mongo:
     image: mongo
     ports: 
       - "27017:27017"
+
+volumes: 
+  myvolume99:
